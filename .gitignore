@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+# runtime data (library, vocabulary, cache, dictionaries) lives in the user's data directory, never here
+*.db
+*.sqlite
+# AOCI: host configs written by `aoci init --agent` contain absolute paths of this machine, never commit them
+.mcp.json
+.codex/
+.claude/settings.local.json

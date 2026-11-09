@@ -1,0 +1,644 @@
+{
+ "generated": "2026-11-09",
+ "recommended": "qwen3.5-9b",
+ "llama_cpp": {
+  "tag": "b12211",
+  "assets": {
+   "darwin-arm64": {
+    "name": "llama-b12211-bin-macos-arm64.tar.gz",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-macos-arm64.tar.gz",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724566541",
+    "size": 16711245,
+    "sha256": "4da4edb437358d31d55938ad849d262ca31b0e0ffb35e9caedb727a0cd5a8f0f"
+   },
+   "darwin-x86_64": {
+    "name": "llama-b12211-bin-macos-x64.tar.gz",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-macos-x64.tar.gz",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724566613",
+    "size": 12455590,
+    "sha256": "6055cc672cc5c744481bb88ac1a7739ff476966c8a190ddaa20676034693a358"
+   },
+   "linux-x86_64": {
+    "name": "llama-b12211-bin-ubuntu-x64.tar.gz",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-ubuntu-x64.tar.gz",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724568969",
+    "size": 23109987,
+    "sha256": "962924b5431bc1237a9e5d26ba072d37b6fe05f79b495206e7ff6134887624c5"
+   },
+   "linux-aarch64": {
+    "name": "llama-b12211-bin-ubuntu-arm64.tar.gz",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-ubuntu-arm64.tar.gz",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724566748",
+    "size": 18759007,
+    "sha256": "6eed2da01c098f814170e941e11a8d91eed200a9a2923eac805fe116b14aff30"
+   },
+   "windows-x86_64": {
+    "name": "llama-b12211-bin-win-cpu-x64.zip",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-win-cpu-x64.zip",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724569181",
+    "size": 24886431,
+    "sha256": "23729000408c6968faf5e322afc99319d3b8c576ba872ef7663d9b89810090f3"
+   },
+   "windows-arm64": {
+    "name": "llama-b12211-bin-win-cpu-arm64.zip",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12211/llama-b12211-bin-win-cpu-arm64.zip",
+    "api_url": "https://api.github.com/repos/ggml-org/llama.cpp/releases/assets/724569086",
+    "size": 13236751,
+    "sha256": "bf52f65602d713a4a13ed366a8ba8d924558bb43be04b7a37f4f5f506a6b6512"
+   }
+  }
+ },
+ "mlx_lm": {
+  "version": "0.32.2"
+ },
+ "models": [
+  {
+   "id": "qwen3.5-4b",
+   "name": "Qwen3.5 4B",
+   "ram_gb": 8,
+   "note": {
+    "zh": "最轻量，8 GB 内存的电脑也能跑；中英文够用，复杂句子的解析会弱一些。",
+    "en": "Lightest option; runs on 8 GB machines. Fine for Chinese/English, weaker on complex sentences."
+   },
+   "gguf": {
+    "repo": "unsloth/Qwen3.5-4B-GGUF",
+    "rev": "e87f176479d0855a907a41277aca2f8ee7a09523",
+    "file": "Qwen3.5-4B-Q4_K_M.gguf",
+    "size": 2740937888,
+    "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/Qwen3.5-4B-MLX-4bit",
+    "rev": "32f3e8ecf65426fc3306969496342d504bfa13f3",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 2273,
+      "sha256": null
+     },
+     {
+      "path": "chat_template.jinja",
+      "size": 7756,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 3366,
+      "sha256": null
+     },
+     {
+      "path": "model.safetensors",
+      "size": 3034300695,
+      "sha256": "5fb9acd0246866381cf8c5c354c6db1019f6498eec4ccb4f5edcc71ffeacb2db"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 101944,
+      "sha256": null
+     },
+     {
+      "path": "preprocessor_config.json",
+      "size": 390,
+      "sha256": null
+     },
+     {
+      "path": "processor_config.json",
+      "size": 1300,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 1139,
+      "sha256": null
+     },
+     {
+      "path": "video_preprocessor_config.json",
+      "size": 385,
+      "sha256": null
+     },
+     {
+      "path": "vocab.json",
+      "size": 6722759,
+      "sha256": null
+     }
+    ],
+    "license": "apache-2.0"
+   }
+  },
+  {
+   "id": "qwen3.5-9b",
+   "name": "Qwen3.5 9B",
+   "ram_gb": 16,
+   "note": {
+    "zh": "推荐的默认选择：速度和质量比较均衡，中日韩与英语都不错。",
+    "en": "Recommended default: a good balance of speed and quality; strong on CJK and English."
+   },
+   "gguf": {
+    "repo": "unsloth/Qwen3.5-9B-GGUF",
+    "rev": "3885219b6810b007914f3a7950a8d1b469d598a5",
+    "file": "Qwen3.5-9B-Q4_K_M.gguf",
+    "size": 5680522464,
+    "sha256": "03b74727a860a56338e042c4420bb3f04b2fec5734175f4cb9fa853daf52b7e8",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/Qwen3.5-9B-MLX-4bit",
+    "rev": "938d8919941c6e7efd3c7150eff7fe9d12afa631",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 1954,
+      "sha256": null
+     },
+     {
+      "path": "chat_template.jinja",
+      "size": 7756,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 3331,
+      "sha256": null
+     },
+     {
+      "path": "model-00001-of-00002.safetensors",
+      "size": 5349771222,
+      "sha256": "a68b87558c6ef43f74c2bd63ce7e9092ceddc3101f3def0030774bae5f42aadd"
+     },
+     {
+      "path": "model-00002-of-00002.safetensors",
+      "size": 600449850,
+      "sha256": "b0a770bf8469c7f3f18756a0e0283f1c1174344a83e059a4e483f6af4907352d"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 123592,
+      "sha256": null
+     },
+     {
+      "path": "preprocessor_config.json",
+      "size": 390,
+      "sha256": null
+     },
+     {
+      "path": "processor_config.json",
+      "size": 1300,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 19989343,
+      "sha256": "87a7830d63fcf43bf241c3c5242e96e62dd3fdc29224ca26fed8ea333db72de4"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 1139,
+      "sha256": null
+     },
+     {
+      "path": "video_preprocessor_config.json",
+      "size": 385,
+      "sha256": null
+     },
+     {
+      "path": "vocab.json",
+      "size": 6722759,
+      "sha256": null
+     }
+    ],
+    "license": "apache-2.0"
+   }
+  },
+  {
+   "id": "gemma-4-e4b",
+   "name": "Gemma 4 E4B",
+   "ram_gb": 16,
+   "note": {
+    "zh": "体积小，欧洲语言（法德西意等）表现好。",
+    "en": "Small, good with European languages."
+   },
+   "gguf": {
+    "repo": "unsloth/gemma-4-E4B-it-GGUF",
+    "rev": "bfc15c382204943c3a8fff0c750b94ae2364d7a3",
+    "file": "gemma-4-E4B-it-Q4_K_M.gguf",
+    "size": 4977171584,
+    "sha256": "85a896a047553e842f25297ee5b031d64ff30147d9c4af17b1e4b394cd1fab87",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/gemma-4-e4b-it-4bit",
+    "rev": "475b9088d29754a3379866cf5aeb6b41acd313c2",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 593,
+      "sha256": null
+     },
+     {
+      "path": "chat_template.jinja",
+      "size": 17336,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 6628,
+      "sha256": null
+     },
+     {
+      "path": "generation_config.json",
+      "size": 208,
+      "sha256": null
+     },
+     {
+      "path": "model.safetensors",
+      "size": 5146800534,
+      "sha256": "932b8271fc3fe65adcc78b96c10c6268bbfb13e8f67d1358727c0d6ee97e1eff"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 240961,
+      "sha256": null
+     },
+     {
+      "path": "processor_config.json",
+      "size": 1316,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 32169626,
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 2740,
+      "sha256": null
+     }
+    ],
+    "license": "gemma"
+   }
+  },
+  {
+   "id": "gemma-4-12b",
+   "name": "Gemma 4 12B",
+   "ram_gb": 24,
+   "note": {
+    "zh": "质量明显好于小模型，适合 24 GB 以上内存。",
+    "en": "Clearly better than the small models; for 24 GB and up."
+   },
+   "gguf": {
+    "repo": "unsloth/gemma-4-12b-it-GGUF",
+    "rev": "fc034cfff751157913579611efad8462ac1be606",
+    "file": "gemma-4-12b-it-Q4_K_M.gguf",
+    "size": 7121861440,
+    "sha256": "0a270ec9fe6b34f4a0d33992b6135117b484ebc4766ab76b51d4ae8c457e4c42",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/gemma-4-12B-it-4bit",
+    "rev": "73bcf09092aa277861d5a191b989b666f7f32e8f",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 84,
+      "sha256": null
+     },
+     {
+      "path": "chat_template.jinja",
+      "size": 17466,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 5415,
+      "sha256": null
+     },
+     {
+      "path": "generation_config.json",
+      "size": 260,
+      "sha256": null
+     },
+     {
+      "path": "model-00001-of-00002.safetensors",
+      "size": 5351756584,
+      "sha256": "0d58feed0c98a69c07317b4481aeae5ab2785f12a496ea96ab24c4842808de78"
+     },
+     {
+      "path": "model-00002-of-00002.safetensors",
+      "size": 1389282927,
+      "sha256": "5b00a1bcb596ce6e827b4cdea6ecf2a0f35bb01306eb87c1ea4b3bcde36c7755"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 135329,
+      "sha256": null
+     },
+     {
+      "path": "processor_config.json",
+      "size": 868,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 32169626,
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 2719,
+      "sha256": null
+     }
+    ],
+    "license": ""
+   }
+  },
+  {
+   "id": "qwen3-14b",
+   "name": "Qwen3 14B",
+   "ram_gb": 24,
+   "note": {
+    "zh": "中日韩语言评价高，适合学术文章；24 GB 以上内存。",
+    "en": "Well regarded for CJK languages and academic text; 24 GB and up."
+   },
+   "gguf": {
+    "repo": "Qwen/Qwen3-14B-GGUF",
+    "rev": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "file": "Qwen3-14B-Q4_K_M.gguf",
+    "size": 9001752960,
+    "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/Qwen3-14B-4bit",
+    "rev": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 865,
+      "sha256": null
+     },
+     {
+      "path": "added_tokens.json",
+      "size": 707,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 939,
+      "sha256": null
+     },
+     {
+      "path": "merges.txt",
+      "size": 1671853,
+      "sha256": null
+     },
+     {
+      "path": "model-00001-of-00002.safetensors",
+      "size": 5354381380,
+      "sha256": "5795efcfc7c96fd273e600562e8b111bfcc427415de9001d0a07e70cd99cff19"
+     },
+     {
+      "path": "model-00002-of-00002.safetensors",
+      "size": 2953517134,
+      "sha256": "2814562d654fe2d541fd4682804a0ccaa400e79701872c8e9f5998cf9481fdf8"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 86266,
+      "sha256": null
+     },
+     {
+      "path": "special_tokens_map.json",
+      "size": 613,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 9706,
+      "sha256": null
+     },
+     {
+      "path": "vocab.json",
+      "size": 2776833,
+      "sha256": null
+     }
+    ],
+    "license": "apache-2.0"
+   }
+  },
+  {
+   "id": "gemma-4-26b-a4b",
+   "name": "Gemma 4 26B-A4B",
+   "ram_gb": 32,
+   "note": {
+    "zh": "混合专家模型：质量接近大模型，生成速度却接近小模型；32 GB 以上内存。",
+    "en": "Mixture-of-experts: near large-model quality at small-model speed; 32 GB and up."
+   },
+   "gguf": {
+    "repo": "unsloth/gemma-4-26B-A4B-it-GGUF",
+    "rev": "c099eb48e663fd284577b04978a94ffccb261841",
+    "file": "gemma-4-26B-A4B-it-UD-Q4_K_M.gguf",
+    "size": 16947541728,
+    "sha256": "f2c28b3dc4776931ac6f879e11f203dec637ea0f14267a86ec8f6165f63f293f",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/gemma-4-26b-a4b-it-4bit",
+    "rev": "0d77464eeb233a2da68ebf9d7dc4edaac7db956d",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 753,
+      "sha256": null
+     },
+     {
+      "path": "chat_template.jinja",
+      "size": 17466,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 12180,
+      "sha256": null
+     },
+     {
+      "path": "generation_config.json",
+      "size": 208,
+      "sha256": null
+     },
+     {
+      "path": "model-00001-of-00003.safetensors",
+      "size": 5320218487,
+      "sha256": "683f420ee09550b8027bf0335c4202e196b37eb520b60a4bcbe8690b9e388c07"
+     },
+     {
+      "path": "model-00002-of-00003.safetensors",
+      "size": 5363328422,
+      "sha256": "feab2873c2976fb7ed666f8462549564a29409364388e0c8f6b015729d165e15"
+     },
+     {
+      "path": "model-00003-of-00003.safetensors",
+      "size": 4657658867,
+      "sha256": "bc607486deb1de5bc7e459932fda5c776a4f816b368feaa661bab8cfbb47e567"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 176940,
+      "sha256": null
+     },
+     {
+      "path": "processor_config.json",
+      "size": 1316,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 32169626,
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 2740,
+      "sha256": null
+     }
+    ],
+    "license": "apache-2.0"
+   }
+  },
+  {
+   "id": "qwen3-32b",
+   "name": "Qwen3 32B",
+   "ram_gb": 48,
+   "note": {
+    "zh": "质量最高、也最慢；48 GB 以上内存。",
+    "en": "Highest quality and slowest; 48 GB and up."
+   },
+   "gguf": {
+    "repo": "Qwen/Qwen3-32B-GGUF",
+    "rev": "938a7432affaec9157f883a87164e2646ae17555",
+    "file": "Qwen3-32B-Q4_K_M.gguf",
+    "size": 19762149024,
+    "sha256": "efd971561896866f0e910cce52761ca77b1b138090c7f15fe284676d57d1f689",
+    "license": "apache-2.0"
+   },
+   "mlx": {
+    "repo": "mlx-community/Qwen3-32B-4bit",
+    "rev": "bcaaf7f538adf166c1080a2befdb4f6019f66639",
+    "files": [
+     {
+      "path": ".gitattributes",
+      "size": 1570,
+      "sha256": null
+     },
+     {
+      "path": "README.md",
+      "size": 865,
+      "sha256": null
+     },
+     {
+      "path": "added_tokens.json",
+      "size": 707,
+      "sha256": null
+     },
+     {
+      "path": "config.json",
+      "size": 939,
+      "sha256": null
+     },
+     {
+      "path": "merges.txt",
+      "size": 1671853,
+      "sha256": null
+     },
+     {
+      "path": "model-00001-of-00004.safetensors",
+      "size": 5366619059,
+      "sha256": "c37d8ac8663e5bcfb7334889dcba56e3c6b3d7a9b8643a62c5f8b6105765aee1"
+     },
+     {
+      "path": "model-00002-of-00004.safetensors",
+      "size": 5346575850,
+      "sha256": "2f8fbccad32a2a2f3072ffb8d6adea2790cc0bd84927cc0c44fbaf1d97912867"
+     },
+     {
+      "path": "model-00003-of-00004.safetensors",
+      "size": 5359025653,
+      "sha256": "4412f7fa42e1419455698d3fe2b3c9557badd36a8a5c3a8d3d2439fc2fa6f0de"
+     },
+     {
+      "path": "model-00004-of-00004.safetensors",
+      "size": 2357630312,
+      "sha256": "5cdadd1a77ec47b3ea7799255efb7d15431765874963f55a33f71f43386eb619"
+     },
+     {
+      "path": "model.safetensors.index.json",
+      "size": 137843,
+      "sha256": null
+     },
+     {
+      "path": "special_tokens_map.json",
+      "size": 613,
+      "sha256": null
+     },
+     {
+      "path": "tokenizer.json",
+      "size": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+     },
+     {
+      "path": "tokenizer_config.json",
+      "size": 9706,
+      "sha256": null
+     },
+     {
+      "path": "vocab.json",
+      "size": 2776833,
+      "sha256": null
+     }
+    ],
+    "license": "apache-2.0"
+   }
+  }
+ ]
+}
