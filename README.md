@@ -18,6 +18,12 @@ A private, local-first reader for learning a language while you learn a subject.
 
 ---
 
+<div align="center">
+<img src="docs/img/word.jpg" alt="Click a word: its meaning in this sentence" width="48%">
+<img src="docs/img/sentence.jpg" alt="Select a sentence: translation, main clause, structure, hard words" width="48%">
+<br><sub>Left: click a word. "account" inside "take into account" is detected as a phrase and explained as a unit. Right: sentence analysis, with the reader making room for the panel. (Explanations shown in Chinese, produced by the built-in Qwen3.5 9B model running on a MacBook.)</sub>
+</div>
+
 ## Why Glosslume
 
 Dictionaries give you every meaning of a word. Translators give you a sentence with no explanation. Neither helps when you read a paper
