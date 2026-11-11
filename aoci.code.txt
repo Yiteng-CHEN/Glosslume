@@ -6,7 +6,7 @@
 AGENTS.md[SG5S]: F:AOCI托管的Agent接入规则：仓库认知的建立、复用、增量维护与收尾原则 | R:code:CLAUDE.md | A:- | S:aoci:begin与aoci:end之间由aoci init维护，项目自定义规则写在区块外
 CLAUDE.md[SG8T]: F:项目记忆：定位、已定决策(含内置本地模型取代使用用户自己的Ollama)、目录结构、当前状态、后续步骤、AOCI使用方式和用户工作规则，新对话从这里开始，并以@AGENTS.md引入AOCI规则 | R:code:README.md,code:AGENTS.md | A:- | S:与Neurolume是独立项目，代码、测试、文档和发布不得混用，它只作为可手动连接的额外模型服务；不得使用Claude/Gemini订阅登录，也不得读取其他程序的凭据文件；只用用户自己纠正过的释义训练本地模型；未经要求不提交、不推送、不发布
 LICENSE[SG2T]: F:MIT许可证全文 | R:- | A:- | S:-
-README.md[SU6S]: F:面向公众的中英双语首页：两张界面截图(docs/img)、价值主张与同类工具对比、亮点、快速开始(macOS双击Glosslume.command)、内置本地模型表与镜像、用法、模型模式与隐私、现状与未验证项、路线图、贡献方式 | R:code:pyproject.toml,code:src/glosslume/cli.py,code:Glosslume.command,code:src/glosslume/localmodel/catalog.json | A:- | S:-
+README.md[SU6S]: F:面向公众的中英双语首页：演示动图与两张界面截图(docs/img)、价值主张与同类工具对比、亮点、快速开始(macOS双击Glosslume.command)、内置本地模型表与镜像、用法、模型模式与隐私、现状与未验证项、路线图、贡献方式 | R:code:pyproject.toml,code:src/glosslume/cli.py,code:Glosslume.command,code:src/glosslume/localmodel/catalog.json | A:- | S:-
 pyproject.toml[FV7T]: F:setuptools包定义：核心零依赖，pdf/keychain/all/dev可选依赖，glosslume命令入口，web静态资源(含vendored pdf.js)和内置模型清单catalog.json随包分发 | R:code:src/glosslume/cli.py,code:src/glosslume/__init__.py | A:glosslume=glosslume.cli:main,extras pdf/keychain/all/dev | S:package-data逐层列出web目录(含vendor/pdfjs各子目录)和localmodel/*.json，新增子目录或数据文件必须加进来，否则装好的包缺文件；版本号与__init__.__version__各写一份需同步
 Glosslume.command[OV5T]: F:macOS双击启动器：找Python 3.11+，建.venv并安装，运行glosslume serve --open；已在运行时只打开页面 | R:code:src/glosslume/cli.py,code:pyproject.toml | A:- | S:端口8780须与cli.py的serve默认端口一致；靠/api/state含version判断是否已在运行；pyproject.toml比.venv/.installed新时自动重装；必须保持可执行位(chmod +x)
 
